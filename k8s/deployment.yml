@@ -17,7 +17,7 @@ spec:
       containers:
         - name: edge-service
           image: ghcr.io/nickgamu/edge-service:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           lifecycle:
             preStop:
               exec:
