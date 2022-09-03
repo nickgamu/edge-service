@@ -24,7 +24,7 @@ spring:
             retries: 3
             methods: GET
             series: SERVER_ERROR
-            exceptions: java.io.Exception,java.util.concurrent.TimeoutException
+            exceptions: java.io.IOException, java.util.concurrent.TimeoutException
             backoff:
               firstBackoff: 50ms
               maxBackoff: 500ms
